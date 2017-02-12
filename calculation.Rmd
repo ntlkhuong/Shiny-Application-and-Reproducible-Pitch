@@ -1,0 +1,54 @@
+---
+title: 'Shiny Application: Basic calculation'
+author: "khuongtln"
+date: "11 February 2017"
+output: ioslides_presentation
+runtime: shiny
+resource_files:
+- server.R
+- ui.R
+---
+
+## Instruction
+This is basic calculator which is impleted by using Shiny application  
+It does 4 operands, including : Addition, Substraction, Multiplication, Division. The result is shown at the right panel  
+In case of the division operands with zero.It displayes " Invalid values"  
+There will be "science" calculator but it isn't ready now. Will be supported in near feature  
+
+## Objects 
+- Some form of input (widget: textbox, radio button, checkbox,...)  
+- Some operation on the ui input in sever.R  
+- Some reactive output displayed as a result of server calculatio  
+
+## Basic calculation
+ - Addition = Operator 1 + Operator 2  
+ - Substraction = Operator 1 - Operator 2  
+ - Multiplication = Operator 1 * Operator 2  
+ - Division. = Operator 1 / Operator 2  
+
+```{r }
+source("./calc.R")
+# Multiplication operand 
+calc <- calc(op1=10,op2=20,oper=3)
+calc
+#Addition operand
+calc <- calc(op1=10,op2=20,oper=1)
+calc
+```
+## UI interface
+It includes some widget:  
+- radion buttons - There are two calculation: basic and science. Currently, It just support
+basic calcultion. Science is updated soon. Default is "Basic" mode  
+- selectInput - Provide multi choice operands, add/sub/div/mul  
+- numbericInput - Input the first operator  
+- numbericInput - Input the second operator  
+## The application
+The application is published at <shinyapp.ios>:https://khuongtln.shinyapps.io/calculation/
+The full source code is ready at<github>:  
+Below is the screenshot of UI including operators and display:  
+
+
+
+
+
+
