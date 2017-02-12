@@ -42,10 +42,13 @@ basic calcultion. Science is updated soon. Default is "Basic" mode
 - selectInput - Provide multi choice operands, add/sub/div/mul  
 - numbericInput - Input the first operator  
 - numbericInput - Input the second operator  
-## The application
-The application is published at <shinyapp.ios>:https://khuongtln.shinyapps.io/calculation/
-The full source code is ready at<github>:  
-Below is the screenshot of UI including operators and display:  
+
+## The application  
+The application is published at <shinyapp.ios>:[calculation](https://khuongtln.shinyapps.io/calculation/)  
+The full source code is ready at<github>: [Shiny-Application-and-Reproducible-Pitch](https://github.com/ntlkhuong/Shiny-Application-and-Reproducible-Pitch)   
+Below is the screenshot of UI including operators and display: 
+![ui](ui.png)
+
 
 
 

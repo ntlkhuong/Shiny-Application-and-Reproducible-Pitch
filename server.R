@@ -16,7 +16,7 @@ shinyServer(function(input, output) {
                 info = "<span style='color: red'>Division</span>"
             }
             }
-            paste0("Calculation for  ", "<strong>",input$op1, " and   ", input$op2, " of </strong>", info)
+            paste0("Calculation for  ", "<strong>",input$op1, " and   ", input$op2, " </strong> of <strong>", info,"</strong>")
         }
             })
     output$result <- renderText({
